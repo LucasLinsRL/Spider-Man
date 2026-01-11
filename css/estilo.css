@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(203,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 90%, rgba(203,0,0,1) 100%);
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 940px;
+    margin: auto;
+    overflow: auto;
+}
+
+
+hr {
+    padding: 1px;
+    width: 100%;
+    background-color: #000000;
+}
+
+
+
+/* CabeÃ§alho */
+.cabecalho {
+    padding: 20px;
+    text-align: center;
+    background-color: #9c1d1d;
+    color:#fff;
+}
+
+.cabecalhojogo {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    background-image: url(../imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
+    height: 85vh;
+    color:#fff
+}
+
+
+.cabecalhoviloes {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    background-image: url(../imagens/viloesfundo.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    color:#fff;
+}
+
+.cabecalhofilmes {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    background-image: url(../imagens/fundofilmes.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
+    color:#fff;
+    height: 100vh;
+}
+
+.cabecalhovar {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    background-image: url(../imagens/homem-aranha_atraves_do_aranhaversooo_capa.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
+    height: 85vh;
+    color:#fff;
+}
+
+.cabecalho h1 {
+    font-size: 50px;
+}
+
+.cabecalho p{
+    font-size: 20px;
+}
+
+
+
+
+/* Barra de navegaÃ§ÃĢo */
+.topo {
+    padding: 5px 0px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;  
+    top: 0;
+}
+
+.topo ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.topo ul li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+.topo ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.topo ul li a:hover {
+    background-color: rgb(202, 11, 11);
+}
+
+.topo ul li.right {
+    float: right;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+/* RodapÃĐ */
+.desen{ 
+    background:rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+}
+
+.link a {
+    color: red;
+}
+
+/* Tabela */
+
+.tabela {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table, th, td {
+    border: 5px solid rgb(255, 0, 0);
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media (max-width: 992px) {
+
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .cabecalho h1 {
+        font-size: 36px;
+    }
+
+    .cabecalho img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+        float: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        text-align: left;
+    }
+
+    .cabecalho {
+        padding: 15px;
+    }
+
+    .cabecalho h1 {
+        font-size: 28px;
+    }
+
+    .cabecalho p {
+        font-size: 16px;
+    }
+
+    /* MENU */
+    .topo ul {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .topo ul li {
+        float: none;
+        flex: 0 0 auto;
+    }
+
+    .topo ul li a {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .topo ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .topo ul {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* IMAGENS */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    /* TEXTOS */
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* TABELA */
+    table, th, td {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,260 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(203,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 90%, rgba(203,0,0,1) 100%);
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 940px;
+    margin: auto;
+    overflow: auto;
+}
+
+/* Barra de navegaÃ§ÃĢo */
+.topo {
+    padding: 5px 0px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;  
+    top: 0;
+    z-index: 1000;
+}
+
+.topo ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.topo ul li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+.topo ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.topo ul li a:hover {
+    background-color: rgb(202, 11, 11);
+}
+
+.topo ul li.right {
+    float: right;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#review-form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1e40ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#user-reviews {
+    border-top: 2px solid #3498db;
+    padding-top: 20px;
+}
+
+#reviews-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.review-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.review-rating {
+    font-weight: bold;
+    color: #3498db;
+}
+
+
+/*Slide*/
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 992px) {
+
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    #app {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        text-align: left;
+    }
+
+    /* MENU */
+    .topo ul {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .topo ul li {
+        float: none;
+        flex: 0 0 auto;
+    }
+
+    .topo ul li a {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .topo ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .topo ul {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+
+    /* TÍTULOS */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    /* FORMULÁRIO */
+    label {
+        font-size: 14px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+
+    /* SLIDES */
+    .prev, .next {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
