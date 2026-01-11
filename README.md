@@ -14,7 +14,7 @@ Aplicar conceitos fundamentais de **desenvolvimento web**, como estruturação d
 ## 🛠️ Tecnologias Utilizadas
 - HTML5  
 - CSS3  
-- JavaScript (básico)  
+- JavaScript  
 - Font Awesome  
 - Google Fonts  
 
