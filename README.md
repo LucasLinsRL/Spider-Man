@@ -28,8 +28,7 @@ Posteriormente, recebeu **ajustes de responsividade utilizando apenas CSS**, vis
 
 ## 🌐 Acesso ao Projeto
 🔗 Link do site (GitHub Pages):  
-https://lucaslinsrl.github.io/Spider-Man/
-
+https://lucas-linsll.github.io/Spider-Man/
 ---
 
 ## 📌 Observações
